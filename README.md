@@ -1,37 +1,34 @@
-# AI-Powered E-commerce Sales Dashboard
-## Project Overview
-This project is a web-based E-commerce Sales Dashboard developed using Python and Flask. It uses Machine Learning models to predict sales and profit performance while providing interactive visualizations and business insights through Power BI.
-The application helps users analyze sales data, forecast future performance, and make data-driven decisions.
+# AI-powered-Ecommerce-Sales-dashboard-using-flask-and-Power-BI
 
-## Key Features:
-* Predict future sales using Machine Learning
-* Analyze profit performance with AI models
-* Interactive charts and visual reports
-* Power BI dashboard integration
-* User-friendly web interface built with Flask
 
-## Technologies Used
-1)Programming & Frameworks
-* Python
-* Flask
-* HTML
-2)Machine Learning
-* Scikit-learn
-* XGBoost
-3)Data Analysis
-* Pandas
-* NumPy
-4)Visualization
-* Matplotlib
-* Seaborn
-* Plotly
-4)Business Intelligence
-* Microsoft Power BI
+This project is a complete AI-powered web application that predicts e-commerce sales and profit using machine learning and visualizes insights with interactive Python plots and a Power BI dashboard. It is built using Flask and can be easily customized for other datasets.
 
-## Project Structure
-ai-ecommerce-dashboard/
+---
 
-ai-ecommerce-dashboard/
+## 🚀 Features
+
+- 📈 Predict e-commerce **sales** using a trained ML regression model
+- 📊 Classify **profit status** using a classification model
+- 📉 Interactive dashboards with **Seaborn**, **Matplotlib**, **Plotly**
+- 🖥️ Integrated **Power BI** dashboard viewer
+- 🌐 Web interface with Flask
+
+---
+
+## 🧰 Tech Stack
+
+- **Frontend**: HTML (via Flask templates)
+- **Backend**: Python 3, Flask
+- **ML Models**: scikit-learn (DecisionTreeRegressor), XGBoost (profit classifier)
+- **Data Processing**: pandas, numpy
+- **Visualization**: seaborn, matplotlib, plotly
+- **BI Tool**: Microsoft Power BI (Desktop)
+
+---
+
+## 📁 Project Structure
+
+📦 ai-ecommerce-dashboard/
 ├── app.py # Main Flask App
 ├── templates/
 │ └── index.html # Web frontend
@@ -41,43 +38,63 @@ ai-ecommerce-dashboard/
 │ └── profit_model.pkl # Trained Profit Classifier Model
 ├── Ecommerce.pbix # Power BI Dashboard
 ├── requirements.txt # Python Dependencies
-└── README.md # Project Overview878875v3ccve
+└── README.md # Project Overview
 
-## Installation Steps
-1. Create Virtual Environment:
+
+# Create Virtual Environment (Recommended)
+bash
+Copy
+Edit
 python -m venv venv
 venv\Scripts\activate
-2. Install Required Packages:
+#Install Requirements
+bash
+Copy
+Edit
 pip install -r requirements.txt
-3. Configure Power BI Paths
-Open 'app.py' and update the Power BI Desktop path and dashboard file location according to your system.
-Example:
+# Power BI Configuration
+Before launching the app, make sure Power BI Desktop is installed on your system.
+
+In your app.py, configure these two paths to match your system:
+
 python
-POWER_BI_PATH = r"Your Power BI Desktop Path"
-PBIX_FILE = r"Your Dashboard File Path"
+Copy
+Edit
+# Power BI paths
+POWER_BI_PATH = r"C:\Program Files\Microsoft Power BI Desktop\bin\PBIDesktop.exe"
 
-## Machine Learning Models
-1)Sales Prediction
-* Model: Decision Tree Regressor
-* Library: Scikit-learn
-2)Profit Classification
-* Model: XGBoost Classifier
-* Library: XGBoost
+PBIX_FILE = r"C:\Users\YourUsername\Desktop\file\Ecommerce.pbix"
+Replace with your actual paths.
 
-## Running the Project
-Execute the following command:
+🧠 ML Models Used
+📊 Sales Prediction:
+Model: DecisionTreeRegressor
+
+Library: scikit-learn (v1.0.2 - important due to compatibility)
+
+💰 Profit Status Classification:
+Model: XGBoostClassifier
+
+Library: xgboost
+
+⚠️ Make sure to train and save models with the same version of scikit-learn and xgboost as used at inference time.
+
+🖥️ Run the Application
+bash
+Copy
+Edit
 python app.py
-Open your browser and visit:
-text
-http://localhost:5000
+Visit http://localhost:5000 in your browser.
 
-## Power BI Dashboard Insights
-The Power BI dashboard provides:
-* Monthly Sales Analysis
-* Regional Performance Insights
-* Category-wise Profit Analysis
-* Product Sales Comparison
-* Business Performance Tracking
-## Project Outcome
-This project combines Machine Learning, Data Analytics, Web Development, and Business Intelligence into a single application that helps businesses monitor performance, predict future sales, and gain actionable insights from e-commerce data.
-This project combines Machine Learning, Data Analytics, Web Development, and Business Intelligence into a single application that helps businesses monitor performance, predict future sales, and gain actionable insights from e-commerce data.
+# 📈 Power BI Dashboard
+Open the file Ecommerce.pbix in Power BI Desktop to access advanced insights such as:
+
+Monthly Sales Trends
+
+Region-wise Performance
+
+Category Profitability
+
+Product Sales Comparison
+
+You can also launch Power BI from the Flask app using the configured paths.
