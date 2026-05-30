@@ -76,5 +76,4 @@ Example:
  -Business Performance Tracking
 
 Project Outcome:
- 
-This project combines Machine Learning, Data Analytics, Web Development, and Business Intelligence into a single application that helps businesses monitor performance, predict future sales, and gain actionable insights from e-commerce data.
+This project combines Machine Learning, Data Analytics, Web Development, and Business Intelligence into a single application that helps businesses monitor  performance, predict future sales, and gain actionable insights from e-commerce data.
