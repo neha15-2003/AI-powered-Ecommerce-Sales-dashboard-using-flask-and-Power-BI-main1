@@ -4,11 +4,11 @@ This project is a web-based E-commerce Sales Dashboard developed using Python an
 The application helps users analyze sales data, forecast future performance, and make data-driven decisions.
 
 #Key Features:
- -Predict future sales using Machine Learning
- -Analyze profit performance with AI models
- -Interactive charts and visual reports
- -Power BI dashboard integration
- -User-friendly web interface built with Flask
+-Predict future sales using Machine Learning
+-Analyze profit performance with AI models
+-Interactive charts and visual reports
+-Power BI dashboard integration
+-User-friendly web interface built with Flask
 
 #Technologies Used
 1)Programming & Frameworks:
